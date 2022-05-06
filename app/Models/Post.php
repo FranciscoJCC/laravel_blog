@@ -24,4 +24,15 @@ class Post extends Model
             ]
         ];
     }
+
+    //Un post pertenece a un usuario
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
+
+    //Mutator, para mostrar un extracto del body del post
+    public function getGetExcerptAttribute(){
+        return substr($this->body, 0, 140);
+    }
+
 }
