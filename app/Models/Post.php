@@ -43,4 +43,10 @@ class Post extends Model
         return substr($this->body, 0, 140);
     }
 
+    //Contruimos la ruta de las imagenes
+    public function getGetImageAttribute(){
+        if($this->image)
+            return url("storage/$this->image");
+    }
+
 }
