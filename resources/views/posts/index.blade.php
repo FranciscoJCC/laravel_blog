@@ -27,7 +27,7 @@
                             <tr>
                                 <td>ID</td>
                                 <td>Titulo</td>
-                                <td colspan="2">&nbsp</td>                                
+                                <td colspan="2">&nbsp;</td>                                
                             </tr>
                         </thead>
                         <tbody>

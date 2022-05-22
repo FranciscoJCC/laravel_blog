@@ -10,6 +10,14 @@ class Post extends Model
 {
     use HasFactory, Sluggable;
 
+    protected $fillable = [
+        'title',
+        'body',
+        'iframe',
+        'image',
+        'user_id',
+    ];
+
     /**
      * Return the sluggable configuration array for this model.
      *
